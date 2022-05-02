@@ -4,11 +4,14 @@
   "description": "Práctica #3 de la semana 3 de la misión NodeJS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Test\""
+    "test": "node ./node_modules/.bin/jest"
   },
   "keywords": [
     "twitter"
   ],
   "author": "David Novella",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
 }
