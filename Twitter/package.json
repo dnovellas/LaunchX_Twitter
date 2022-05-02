@@ -1,0 +1,14 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "Práctica #3 de la semana 3 de la misión NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test\""
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "David Novella",
+  "license": "ISC"
+}
