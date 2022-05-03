@@ -13,6 +13,9 @@ class UserService{
     userInfoInList[3] = user.getBio;
     return userInfoInList;
   }
+  static updateUserUsername(user, newUsername){
+    user.setUsername = newUsername;
+  }
 }
 
 module.exports = UserService
