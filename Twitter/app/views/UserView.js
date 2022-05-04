@@ -25,18 +25,24 @@ class UserView{
     let isPayloadValid = false;
     
     // validate payload.id
-    if (payload.id != null && payload.id != "" && !isNaN(payload.id)) {
+    if (payload.id !== undefined && payload.id != null && payload.id != "" && !isNaN(payload.id)) {
       isPayloadValid = true;
+    }else{
+      return false;
     }
 
     // validate payload.name
-    if (payload.name != null && payload.name != "" && isNaN(payload.name)) {
+    if (payload.name !== undefined && payload.name != null && payload.name != "" && isNaN(payload.name)) {
       isPayloadValid = true;
+    }else{
+      return false;
     }
 
     //validate payload.username
-    if (payload.username != null && payload.username != "" && isNaN(payload.username)) {
+    if (payload.username !== undefined && payload.username != null && payload.username != "" && isNaN(payload.username)) {
       isPayloadValid = true;
+    }else{
+      return false;
     }
 
     return isPayloadValid;
